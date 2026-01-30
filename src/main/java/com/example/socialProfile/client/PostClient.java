@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.example.socialProfile.client.dto.PostResponse;
 
-@FeignClient(name = "post-service", url = "${post.service.url}")
+@FeignClient(name = "post-service", url = "${services.post.url}")
 public interface PostClient {
 
     @PostMapping("/posts/batch")
